@@ -95,22 +95,25 @@
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{{\Large Zhibo Wang}} & Email: \href{mailto:wzbo5101@gmail.com}{wzbo5101@gmail.com}\\
-    & Mobile: \href{tel:+86-186-1560-0310}{+86-186-1560-0310} \\
+    \textbf{{\Large Zhibo Wang}} &
+    Email: \href{mailto:wzbo5101@gmail.com}{wzbo5101@gmail.com}\\
+    &
+    Mobile: \href{tel:+86-186-1560-0310}{+86-186-1560-0310}\\
 \end{tabular*}
-
 
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
+
 \resumeSubheading
 {Shandong University}{Shandong, China}
-{Bachelor of Engineering in Computer Science and Technology}{Sep 2000 -- Jul 2004}
+{Bachelor of Engineering in Computer Science and Technology}
+{Sep 2000 -- Jul 2004}
+
 \resumeSubHeadingListEnd
 
 
@@ -121,15 +124,21 @@
 \resumeSubheading
 {EyeCool}{Beijing, China}
 {Software Architect}{Jan 2009 -- Present}
+
 \resumeItemListStart
+
 \resumeItem{}
-{Responsible for technology selection as a system architect}
+{Lead technology selection and architectural design for enterprise software systems.}
+
 \resumeItem{}
-{Analyze and resolve performance and undetermined issues}
+{Analyze and resolve complex performance bottlenecks and production issues.}
+
 \resumeItem{}
-{Advise on product direction}
+{Provide technical guidance on product architecture and long-term development strategy.}
+
 \resumeItem{}
-{Train models}
+{Design and manage AI model training workflows.}
+
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -139,89 +148,112 @@
 \section{Projects}
 \resumeSubHeadingListStart
 
-\resumeSubheading{Facical Based Terminal Access Control System}{07/2024 - Present}{}{}
+%------------------------------------------------
+
+\resumeSubheading
+{Facial-Based Terminal Access Control System}
+{Jul 2024 -- May 2025}{}{}
 
 \resumeItemListStart
-\resumeSubItem{}
-{Design and implement a system that could manage the terminals , distribute licenses to termianls,
-    monitor terminal status, manage the relation of user account and terminals and organizations}
 
 \resumeSubItem{}
-{The system should support at least ten thousands terminals online.}
+{Designed and implemented a centralized management platform for terminal devices, license distribution, terminal monitoring, and user, organization, and device management.}
 
 \resumeSubItem{}
-{a model to review who has been use the terminal computer with 10 millions of pictures}
-\resumeSubItem{}
-{Design and implement a terminal application with c++ that could sync data from server,
-    use camera to identify the user who currently try to login
-}
-\resumeSubItem{}
-{build a self update module with python could monitor the application status, check updates and auto update
-    the terminal application.}
+{Designed the system to support more than 10,000 terminals online simultaneously.}
 
 \resumeSubItem{}
-{build a live video client which based on RTMP and ffmpeg to push frames to the server when the Administrator starts the live show.}
+{Developed an AI-based review system capable of identifying users from a database containing over 10 million facial images.}
+
+\resumeSubItem{}
+{Designed and implemented a C++ terminal application that synchronizes data with the server and performs facial authentication during user login.}
+
+\resumeSubItem{}
+{Developed a self-updating module in Python to monitor application health, detect new releases, and automatically update the terminal software.}
+
+\resumeSubItem{}
+{Built a live video streaming client using RTMP and FFmpeg to stream video to the server when initiated by an administrator.}
 
 \resumeItemListEnd
 
 
-\resumeSubheading{MEGA}{07/2024 - Present}{}{}
+%------------------------------------------------
+
+\resumeSubheading
+{MEGA - Large-scale Biometric Identification System }
+{Apr 2024 -- Present}{}{}
+
 \resumeItemListStart
-\resumeSubItem{}
-{Design and implement a bimetric identify system that supports multiple hybrid biometric features search
-    and authentication under a database of hundreds of millions.}
-\resumeSubItem{}
-{Control the response time to second}
-\resumeSubItem{}
-{Design and implement a system for expert with which they could review the suspicious results.}
-\resumeSubItem{}
-{Support most biometric standards, including but not limited to ISO/IEC 19794, 19784, 19785,
-    19109, 24722, ICAO 9303, MOSIP , E.T.C}
-\resumeSubItem{}
-{Build a fast cache model to keep sync with the database and speed up the feature load performance.}
 
 \resumeSubItem{}
-{design a protocol to auto adjust and improve the accuracy of identify when there are multiple biometric informations.
-}
+{Designed and implemented a large-scale biometric identification system supporting hybrid biometric search and authentication across databases containing hundreds of millions of records.}
+
+\resumeSubItem{}
+{Optimized the system to maintain response times within seconds for large-scale searches.}
+
+\resumeSubItem{}
+{Designed and implemented an expert review platform for verifying suspicious matching results.}
+
+\resumeSubItem{}
+{Implemented support for major biometric standards, including ISO/IEC 19794, ISO/IEC 19784, ISO/IEC 19785, ISO/IEC 19109, ISO/IEC 24722, ICAO 9303, MOSIP, and related standards.}
+
+\resumeSubItem{}
+{Developed a high-performance caching mechanism to synchronize with the database and significantly improve feature loading performance.}
+
+\resumeSubItem{}
+{Designed a scoring protocol that dynamically adjusts matching accuracy when multiple biometric modalities are available.}
+
 \resumeItemListEnd
 
-\resumeSubheading{NUWA}{03/2022 - 07/2024}{}{}
+
+%------------------------------------------------
+
+\resumeSubheading
+{NUWA - AI Training Management System}
+{Mar 2022 -- Jul 2024}{}{}
+
 \resumeItemListStart
-\resumeSubItem{}
-{Design and implement a AI train management system that supports training data management, model train,
-    model artifact management,
-    resource assignments, model publish as service ETC}
-\resumeSubItem{}
-{build a schedule modle which based on K8S to schedule the train job on resources. }
 
 \resumeSubItem{}
-{ build a frontend editor which can drage components to build the train steps and show the build status. }
+{Designed and implemented an AI training management platform supporting dataset management, model training, artifact management, resource allocation, and model deployment as online services.}
+
+\resumeSubItem{}
+{Developed a Kubernetes-based scheduling module for efficiently allocating training jobs across computing resources.}
+
+\resumeSubItem{}
+{Built a drag-and-drop web-based workflow editor that enables users to visually construct AI training pipelines and monitor execution status in real time.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Others}
+{}{}{}
+
+\resumeItemListStart
+
+\resumeSubItem{EC-RPC}
+{Designed and implemented a high-performance RPC framework supporting multiple communication protocols, including Unix Domain Socket, TCP, Named Pipe, and Shared Memory, to improve system stability and communication efficiency.}
+
+\resumeSubItem{Smart BIOS}
+{Designed and implemented a distributed biometric management, verification, and identification platform with dynamic scalability and automatic resource scheduling based on system performance.}
 
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%
 %--------SKILLS------------
 \section{Skills}
+
 \resumeSubHeadingListStart
+
 \item{
-            \textbf{Languages}{: Java, C++, Python, JavaScript, SQL}
-            %             \hfill
-            %            \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-      }
-\item{
-            \textbf{Frameworks}{: Spring, Boost, BPMN, Qt }
-      }
-\item {
-            \textbf{Frontend}{: Vue, jQuery, nodejs  }
+            \textbf{Programming Languages}: Java, C++, Python, JavaScript, SQL, Go, Rust
       }
 
-\item {
-            \textbf{Other}{: Linux}
+\item{
+            \textbf{Frameworks}: Spring, Boost, Qt, BPMN, Vue.js, jQuery, WASM
       }
+
 \resumeSubHeadingListEnd
 
-
-%-------------------------------------------
 \end{document}
