@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in LateX
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{ #2 \vspace{-2pt}}
+    }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 
+        \ifboolexpr{ not ( test{\ifstrempty{#3}} and test{\ifstrempty{#4}} ) }{%
+            \\[-1pt]
+            \textit{\small #3} & \textit{ \small #4}
+        }{}
+        % \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItemPlain}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label={},leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{{\Large Zhibo Wang}} & Email: \href{mailto:wzbo5101@gmail.com}{wzbo5101@gmail.com}\\
+    & Mobile: \href{tel:+86-186-1560-0310}{+86-186-1560-0310} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Shandong University}{Shandong, China}
+{Bachelor of Engineering in Computer Science and Technology}{Sep 2000 -- Jul 2004}
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{EyeCool}{Beijing, China}
+{Software Architect}{Jan 2009 -- Present}
+\resumeItemListStart
+\resumeItem{}
+{Responsible for technology selection as a system architect}
+\resumeItem{}
+{Analyze and resolve performance and undetermined issues}
+\resumeItem{}
+{Advise on product direction}
+\resumeItem{}
+{Train models}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading{Facical Based Terminal Access Control System}{07/2024 - Present}{}{}
+
+\resumeItemListStart
+\resumeSubItem{}
+{Design and implement a system that could manage the terminals , distribute licenses to termianls,
+    monitor terminal status, manage the relation of user account and terminals and organizations}
+
+\resumeSubItem{}
+{The system should support at least ten thousands terminals online.}
+
+\resumeSubItem{}
+{a model to review who has been use the terminal computer with 10 millions of pictures}
+\resumeSubItem{}
+{Design and implement a terminal application with c++ that could sync data from server,
+    use camera to identify the user who currently try to login
+}
+\resumeSubItem{}
+{build a self update module with python could monitor the application status, check updates and auto update
+    the terminal application.}
+
+\resumeSubItem{}
+{build a live video client which based on RTMP and ffmpeg to push frames to the server when the Administrator starts the live show.}
+
+\resumeItemListEnd
+
+
+\resumeSubheading{MEGA}{07/2024 - Present}{}{}
+\resumeItemListStart
+\resumeSubItem{}
+{Design and implement a bimetric identify system that supports multiple hybrid biometric features search
+    and authentication under a database of hundreds of millions.}
+\resumeSubItem{}
+{Control the response time to second}
+\resumeSubItem{}
+{Design and implement a system for expert with which they could review the suspicious results.}
+\resumeSubItem{}
+{Support most biometric standards, including but not limited to ISO/IEC 19794, 19784, 19785,
+    19109, 24722, ICAO 9303, MOSIP , E.T.C}
+\resumeSubItem{}
+{Build a fast cache model to keep sync with the database and speed up the feature load performance.}
+
+\resumeSubItem{}
+{design a protocol to auto adjust and improve the accuracy of identify when there are multiple biometric informations.
+}
+\resumeItemListEnd
+
+\resumeSubheading{NUWA}{03/2022 - 07/2024}{}{}
+\resumeItemListStart
+\resumeSubItem{}
+{Design and implement a AI train management system that supports training data management, model train,
+    model artifact management,
+    resource assignments, model publish as service ETC}
+\resumeSubItem{}
+{build a schedule modle which based on K8S to schedule the train job on resources. }
+
+\resumeSubItem{}
+{ build a frontend editor which can drage components to build the train steps and show the build status. }
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Languages}{: Java, C++, Python, JavaScript, SQL}
+            %             \hfill
+            %            \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+      }
+\item{
+            \textbf{Frameworks}{: Spring, Boost, BPMN, Qt }
+      }
+\item {
+            \textbf{Frontend}{: Vue, jQuery, nodejs  }
+      }
+
+\item {
+            \textbf{Other}{: Linux}
+      }
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

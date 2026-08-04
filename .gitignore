@@ -15,5 +15,7 @@ Archieve/
 *.cb2
 .*.lb
 
+*.synctex.gz
+
 # github action result
 semicolon_delimited_script
